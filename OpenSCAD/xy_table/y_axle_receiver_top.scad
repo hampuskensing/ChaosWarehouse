@@ -11,7 +11,7 @@ top_height = 12;
 
     difference() {
         // base shape
-        cube([mount_length, sled_width, top_height]);
+        cube([mount_length, sled_width, top_height - 1]);
         // bearing mount
         translate([bearing_mount_width / 2, sled_width / 2 - bearing_thickness / 2, top_height])
         rotate([270, 0, 0]) {           

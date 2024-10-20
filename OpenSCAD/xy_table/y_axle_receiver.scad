@@ -6,7 +6,7 @@ bottom_y = 40;
 
 $fn = 30;
 mount_length = bearing_mount_width / 2 + y_axle_distance + axle_holder_width / 2;
-
+mirror([1, 0, 0])
 union() {
     difference() {
         // base shape
@@ -37,7 +37,13 @@ union() {
     // x traveler mount    
     translate([bearing_mount_width / 2 - 12/2, sled_width, 0]) {
         difference() { 
-            cube([12, 12, 7]);
+            cube([12, 12, 5]);
+            translate([6, 6, 0]) cylinder(d = m3_hole_d, h = 7);
+        }
+    }
+    translate([bearing_mount_width / 2 + y_axle_distance - 12/2, sled_width, 0]) {
+        difference() { 
+            cube([12, 12, 5]);
             translate([6, 6, 0]) cylinder(d = m3_hole_d, h = 7);
         }
     }
