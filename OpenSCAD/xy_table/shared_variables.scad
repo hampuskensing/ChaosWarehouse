@@ -23,6 +23,14 @@ bearing_diameter = 22.5;
 bearing_thickness = 8;
 bearing_mount_width = bearing_diameter + 16;
 
+// traveler
+traveler_nut_d = 10.5;
+traveler_ring_d = 22;
+traveler_ring_th = 3;
+traveler_nut_length = 10.5;
+traveler_screw_r = 15.5/2;
+traveler_downset = 10;
+
 // general
 y_axle_distance = 30;
 bottom_th = 8;
