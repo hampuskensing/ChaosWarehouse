@@ -11,6 +11,11 @@ sled_screw_head_th = 3;
 motor_width = 45;
 motor_mount_height = 40;
 
+// x motor
+x_motor_mount_width = motor_width;
+x_axle_height = 22;
+x_motor_mount_height = 42;
+ 
 // roundbar
 axle_holder_width = 30;
 axle_set_depth = 12;
@@ -40,3 +45,5 @@ motor_backset = 30;
 axle_height = 20;
 motor_mount_width = motor_width / 2 + y_axle_distance + axle_holder_width / 2;
 m3_hole_d = 3.8;
+
+mount_length = wall_th + motor_backset;

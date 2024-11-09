@@ -2,10 +2,7 @@ use <nema_17_negative.scad>
 use <sled_negative.scad>
 include <shared_variables.scad>
 
-bottom_y = 40;
-
 $fn = 30;
-mount_length = wall_th + motor_backset;
 
 union() {
     difference() {
@@ -54,5 +51,4 @@ union() {
             translate([6, 6, 0]) cylinder(d = m3_hole_d, h = 7);
         }
     }
-
 }
